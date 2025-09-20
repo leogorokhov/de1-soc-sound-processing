@@ -2,7 +2,7 @@ module part1 (CLOCK_50, CLOCK2_50, KEY, FPGA_I2C_SCLK, FPGA_I2C_SDAT, AUD_XCK,
 		        AUD_DACLRCK, AUD_ADCLRCK, AUD_BCLK, AUD_ADCDAT, AUD_DACDAT);
 
 	input CLOCK_50, CLOCK2_50;
-	input [0:0] KEY;
+	input [0:3] KEY;
 	// I2C Audio/Video config interface
 	output FPGA_I2C_SCLK;
 	inout FPGA_I2C_SDAT;
@@ -21,11 +21,52 @@ module part1 (CLOCK_50, CLOCK2_50, KEY, FPGA_I2C_SCLK, FPGA_I2C_SDAT, AUD_XCK,
 	/////////////////////////////////
 	// Your code goes here 
 	/////////////////////////////////
-	
+
+	wire [15:0] noise;
+noise_gen ng (
+    .clk   (CLOCK_50),
+	.reset (reset),
+    .noise (noise)
+);
+	always @(posedge CLOCK_50 or negedge reset) begin
+		if (reset) begin
+        writedata_left  <= 16'd0;
+        writedata_right <= 16'd0;
+        write     <= 1'b0;
+    end else begin
+        if (read) begin
+            reg [15:0] L, R;
+            L = readdata_left;
+            R = readdata_right;
+
+			// KEY[1] — mute левого канала
+			if (~KEY[1]) L = 16'd0;
+
+			// KEY[2] — swap каналов
+			if (~KEY[2]) begin
+                L = readdata_right;
+                R = readdata_left;
+            end
+
+			// KEY[3] — добавить шум
+			if (~KEY[3]) begin
+                L = L + noise;
+                R = R + noise;
+            end
+
+            // записываем в выходной FIFO
+            writedata_left  <= L;
+            writedata_right <= R;
+            write     <= 1'b1;
+        end else write  <= 1'b0;
+    end
+end
+
+/*	
 assign writedata_left  = readdata_left;
 assign writedata_right = readdata_right;
 assign write = read_ready && write_ready;
-assign read = read_ready;
+assign read = read_ready; */
 	/*
 	assign writedata_left = ... not shown
 	assign writedata_right = ... not shown
