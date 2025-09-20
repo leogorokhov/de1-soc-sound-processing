@@ -258,6 +258,7 @@ module DE1_SOC_golden_top(
 //  Structural coding
 //=======================================================
 
+/*
 part1 ent11(.CLOCK_50(CLOCK_50),
 				.CLOCK2_50(CLOCK2_50), 
 				.KEY(KEY), 
@@ -270,6 +271,26 @@ part1 ent11(.CLOCK_50(CLOCK_50),
 				.AUD_ADCDAT(AUD_BCLK), 
 				.AUD_DACDAT(AUD_DACDAT)
 				);
+*/
+				
+part2 ent12(.CLOCK_50(CLOCK_50),
+				.CLOCK2_50(CLOCK2_50), 
+				.KEY(KEY), 
+				.FPGA_I2C_SCLK(FPGA_I2C_SCLK),
+				.FPGA_I2C_SDAT(FPGA_I2C_SDAT), 
+				.AUD_XCK(AUD_XCK), 
+		      .AUD_DACLRCK(AUD_DACLRCK),
+				.AUD_ADCLRCK(AUD_ADCLRCK),
+				.AUD_BCLK(AUD_BCLK), 
+				.AUD_ADCDAT(AUD_BCLK), 
+				.AUD_DACDAT(AUD_DACDAT),
+				.SW(SW),
+				.HEX0(HEX0),
+				.HEX1(HEX1),
+				.HEX2(HEX2),
+				.HEX3(HEX3)
+				);
+
 
 
 endmodule

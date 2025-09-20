@@ -1,38 +1,38 @@
 |DE1_SOC_golden_top
-ADC_CONVST <= <GND>
-ADC_DIN <= <GND>
+ADC_CONVST << <GND>
+ADC_DIN << <GND>
 ADC_DOUT => ~NO_FANOUT~
-ADC_SCLK <= <GND>
+ADC_SCLK << <GND>
 AUD_ADCDAT => ~NO_FANOUT~
-AUD_ADCLRCK <> part1:ent11.AUD_ADCLRCK
-AUD_BCLK <> part1:ent11.AUD_ADCDAT
-AUD_BCLK <> part1:ent11.AUD_BCLK
-AUD_DACDAT <= part1:ent11.AUD_DACDAT
-AUD_DACLRCK <> part1:ent11.AUD_DACLRCK
-AUD_XCK <= part1:ent11.AUD_XCK
+AUD_ADCLRCK <> part2:ent12.AUD_ADCLRCK
+AUD_BCLK <> part2:ent12.AUD_ADCDAT
+AUD_BCLK <> part2:ent12.AUD_BCLK
+AUD_DACDAT << part2:ent12.AUD_DACDAT
+AUD_DACLRCK <> part2:ent12.AUD_DACLRCK
+AUD_XCK << part2:ent12.AUD_XCK
 CLOCK2_50 => CLOCK2_50.IN1
 CLOCK3_50 => ~NO_FANOUT~
 CLOCK4_50 => ~NO_FANOUT~
 CLOCK_50 => CLOCK_50.IN1
-DRAM_ADDR[0] <= <GND>
-DRAM_ADDR[1] <= <GND>
-DRAM_ADDR[2] <= <GND>
-DRAM_ADDR[3] <= <GND>
-DRAM_ADDR[4] <= <GND>
-DRAM_ADDR[5] <= <GND>
-DRAM_ADDR[6] <= <GND>
-DRAM_ADDR[7] <= <GND>
-DRAM_ADDR[8] <= <GND>
-DRAM_ADDR[9] <= <GND>
-DRAM_ADDR[10] <= <GND>
-DRAM_ADDR[11] <= <GND>
-DRAM_ADDR[12] <= <GND>
-DRAM_BA[0] <= <GND>
-DRAM_BA[1] <= <GND>
-DRAM_CAS_N <= <GND>
-DRAM_CKE <= <GND>
-DRAM_CLK <= <GND>
-DRAM_CS_N <= <GND>
+DRAM_ADDR[0] << <GND>
+DRAM_ADDR[1] << <GND>
+DRAM_ADDR[2] << <GND>
+DRAM_ADDR[3] << <GND>
+DRAM_ADDR[4] << <GND>
+DRAM_ADDR[5] << <GND>
+DRAM_ADDR[6] << <GND>
+DRAM_ADDR[7] << <GND>
+DRAM_ADDR[8] << <GND>
+DRAM_ADDR[9] << <GND>
+DRAM_ADDR[10] << <GND>
+DRAM_ADDR[11] << <GND>
+DRAM_ADDR[12] << <GND>
+DRAM_BA[0] << <GND>
+DRAM_BA[1] << <GND>
+DRAM_CAS_N << <GND>
+DRAM_CKE << <GND>
+DRAM_CLK << <GND>
+DRAM_CS_N << <GND>
 DRAM_DQ[0] <> <UNC>
 DRAM_DQ[1] <> <UNC>
 DRAM_DQ[2] <> <UNC>
@@ -49,13 +49,13 @@ DRAM_DQ[12] <> <UNC>
 DRAM_DQ[13] <> <UNC>
 DRAM_DQ[14] <> <UNC>
 DRAM_DQ[15] <> <UNC>
-DRAM_LDQM <= <GND>
-DRAM_RAS_N <= <GND>
-DRAM_UDQM <= <GND>
-DRAM_WE_N <= <GND>
-FAN_CTRL <= <GND>
-FPGA_I2C_SCLK <= part1:ent11.FPGA_I2C_SCLK
-FPGA_I2C_SDAT <> part1:ent11.FPGA_I2C_SDAT
+DRAM_LDQM << <GND>
+DRAM_RAS_N << <GND>
+DRAM_UDQM << <GND>
+DRAM_WE_N << <GND>
+FAN_CTRL << <GND>
+FPGA_I2C_SCLK << part2:ent12.FPGA_I2C_SCLK
+FPGA_I2C_SDAT <> part2:ent12.FPGA_I2C_SDAT
 GPIO_0[0] <> <UNC>
 GPIO_0[1] <> <UNC>
 GPIO_0[2] <> <UNC>
@@ -128,78 +128,78 @@ GPIO_1[32] <> <UNC>
 GPIO_1[33] <> <UNC>
 GPIO_1[34] <> <UNC>
 GPIO_1[35] <> <UNC>
-HEX0[0] <= <GND>
-HEX0[1] <= <GND>
-HEX0[2] <= <GND>
-HEX0[3] <= <GND>
-HEX0[4] <= <GND>
-HEX0[5] <= <GND>
-HEX0[6] <= <GND>
-HEX1[0] <= <GND>
-HEX1[1] <= <GND>
-HEX1[2] <= <GND>
-HEX1[3] <= <GND>
-HEX1[4] <= <GND>
-HEX1[5] <= <GND>
-HEX1[6] <= <GND>
-HEX2[0] <= <GND>
-HEX2[1] <= <GND>
-HEX2[2] <= <GND>
-HEX2[3] <= <GND>
-HEX2[4] <= <GND>
-HEX2[5] <= <GND>
-HEX2[6] <= <GND>
-HEX3[0] <= <GND>
-HEX3[1] <= <GND>
-HEX3[2] <= <GND>
-HEX3[3] <= <GND>
-HEX3[4] <= <GND>
-HEX3[5] <= <GND>
-HEX3[6] <= <GND>
-HEX4[0] <= <GND>
-HEX4[1] <= <GND>
-HEX4[2] <= <GND>
-HEX4[3] <= <GND>
-HEX4[4] <= <GND>
-HEX4[5] <= <GND>
-HEX4[6] <= <GND>
-HEX5[0] <= <GND>
-HEX5[1] <= <GND>
-HEX5[2] <= <GND>
-HEX5[3] <= <GND>
-HEX5[4] <= <GND>
-HEX5[5] <= <GND>
-HEX5[6] <= <GND>
+HEX0[0] << part2:ent12.HEX0
+HEX0[1] << part2:ent12.HEX0
+HEX0[2] << part2:ent12.HEX0
+HEX0[3] << part2:ent12.HEX0
+HEX0[4] << part2:ent12.HEX0
+HEX0[5] << part2:ent12.HEX0
+HEX0[6] << part2:ent12.HEX0
+HEX1[0] << part2:ent12.HEX1
+HEX1[1] << part2:ent12.HEX1
+HEX1[2] << part2:ent12.HEX1
+HEX1[3] << part2:ent12.HEX1
+HEX1[4] << part2:ent12.HEX1
+HEX1[5] << part2:ent12.HEX1
+HEX1[6] << part2:ent12.HEX1
+HEX2[0] << part2:ent12.HEX2
+HEX2[1] << part2:ent12.HEX2
+HEX2[2] << part2:ent12.HEX2
+HEX2[3] << part2:ent12.HEX2
+HEX2[4] << part2:ent12.HEX2
+HEX2[5] << part2:ent12.HEX2
+HEX2[6] << part2:ent12.HEX2
+HEX3[0] << part2:ent12.HEX3
+HEX3[1] << part2:ent12.HEX3
+HEX3[2] << part2:ent12.HEX3
+HEX3[3] << part2:ent12.HEX3
+HEX3[4] << part2:ent12.HEX3
+HEX3[5] << part2:ent12.HEX3
+HEX3[6] << part2:ent12.HEX3
+HEX4[0] << <GND>
+HEX4[1] << <GND>
+HEX4[2] << <GND>
+HEX4[3] << <GND>
+HEX4[4] << <GND>
+HEX4[5] << <GND>
+HEX4[6] << <GND>
+HEX5[0] << <GND>
+HEX5[1] << <GND>
+HEX5[2] << <GND>
+HEX5[3] << <GND>
+HEX5[4] << <GND>
+HEX5[5] << <GND>
+HEX5[6] << <GND>
 IRDA_RXD => ~NO_FANOUT~
-IRDA_TXD <= <GND>
+IRDA_TXD << <GND>
 KEY[0] => KEY[0].IN1
-KEY[1] => ~NO_FANOUT~
-KEY[2] => ~NO_FANOUT~
-KEY[3] => ~NO_FANOUT~
-LEDR[0] <= <GND>
-LEDR[1] <= <GND>
-LEDR[2] <= <GND>
-LEDR[3] <= <GND>
-LEDR[4] <= <GND>
-LEDR[5] <= <GND>
-LEDR[6] <= <GND>
-LEDR[7] <= <GND>
-LEDR[8] <= <GND>
-LEDR[9] <= <GND>
+KEY[1] => KEY[1].IN1
+KEY[2] => KEY[2].IN1
+KEY[3] => KEY[3].IN1
+LEDR[0] << <GND>
+LEDR[1] << <GND>
+LEDR[2] << <GND>
+LEDR[3] << <GND>
+LEDR[4] << <GND>
+LEDR[5] << <GND>
+LEDR[6] << <GND>
+LEDR[7] << <GND>
+LEDR[8] << <GND>
+LEDR[9] << <GND>
 PS2_CLK <> <UNC>
 PS2_CLK2 <> <UNC>
 PS2_DAT <> <UNC>
 PS2_DAT2 <> <UNC>
-SW[0] => ~NO_FANOUT~
-SW[1] => ~NO_FANOUT~
-SW[2] => ~NO_FANOUT~
-SW[3] => ~NO_FANOUT~
-SW[4] => ~NO_FANOUT~
-SW[5] => ~NO_FANOUT~
-SW[6] => ~NO_FANOUT~
-SW[7] => ~NO_FANOUT~
-SW[8] => ~NO_FANOUT~
-SW[9] => ~NO_FANOUT~
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+SW[5] => SW[5].IN1
+SW[6] => SW[6].IN1
+SW[7] => SW[7].IN1
+SW[8] => SW[8].IN1
+SW[9] => SW[9].IN1
 TD_CLK27 => ~NO_FANOUT~
 TD_DATA[0] => ~NO_FANOUT~
 TD_DATA[1] => ~NO_FANOUT~
@@ -210,43 +210,46 @@ TD_DATA[5] => ~NO_FANOUT~
 TD_DATA[6] => ~NO_FANOUT~
 TD_DATA[7] => ~NO_FANOUT~
 TD_HS => ~NO_FANOUT~
-TD_RESET_N <= <GND>
+TD_RESET_N << <GND>
 TD_VS => ~NO_FANOUT~
-VGA_B[0] <= <GND>
-VGA_B[1] <= <GND>
-VGA_B[2] <= <GND>
-VGA_B[3] <= <GND>
-VGA_B[4] <= <GND>
-VGA_B[5] <= <GND>
-VGA_B[6] <= <GND>
-VGA_B[7] <= <GND>
-VGA_BLANK_N <= <GND>
-VGA_CLK <= <GND>
-VGA_G[0] <= <GND>
-VGA_G[1] <= <GND>
-VGA_G[2] <= <GND>
-VGA_G[3] <= <GND>
-VGA_G[4] <= <GND>
-VGA_G[5] <= <GND>
-VGA_G[6] <= <GND>
-VGA_G[7] <= <GND>
-VGA_HS <= <GND>
-VGA_R[0] <= <GND>
-VGA_R[1] <= <GND>
-VGA_R[2] <= <GND>
-VGA_R[3] <= <GND>
-VGA_R[4] <= <GND>
-VGA_R[5] <= <GND>
-VGA_R[6] <= <GND>
-VGA_R[7] <= <GND>
-VGA_SYNC_N <= <GND>
-VGA_VS <= <GND>
+VGA_B[0] << <GND>
+VGA_B[1] << <GND>
+VGA_B[2] << <GND>
+VGA_B[3] << <GND>
+VGA_B[4] << <GND>
+VGA_B[5] << <GND>
+VGA_B[6] << <GND>
+VGA_B[7] << <GND>
+VGA_BLANK_N << <GND>
+VGA_CLK << <GND>
+VGA_G[0] << <GND>
+VGA_G[1] << <GND>
+VGA_G[2] << <GND>
+VGA_G[3] << <GND>
+VGA_G[4] << <GND>
+VGA_G[5] << <GND>
+VGA_G[6] << <GND>
+VGA_G[7] << <GND>
+VGA_HS << <GND>
+VGA_R[0] << <GND>
+VGA_R[1] << <GND>
+VGA_R[2] << <GND>
+VGA_R[3] << <GND>
+VGA_R[4] << <GND>
+VGA_R[5] << <GND>
+VGA_R[6] << <GND>
+VGA_R[7] << <GND>
+VGA_SYNC_N << <GND>
+VGA_VS << <GND>
 
 
-|DE1_SOC_golden_top|part1:ent11
-CLOCK_50 => CLOCK_50.IN2
+|DE1_SOC_golden_top|part2:ent12
+CLOCK_50 => CLOCK_50.IN3
 CLOCK2_50 => CLOCK2_50.IN1
-KEY[0] => reset.IN3
+KEY[3] => ~NO_FANOUT~
+KEY[2] => ~NO_FANOUT~
+KEY[1] => ~NO_FANOUT~
+KEY[0] => reset.IN4
 FPGA_I2C_SCLK <= audio_and_video_config:cfg.port3
 FPGA_I2C_SDAT <> audio_and_video_config:cfg.port2
 AUD_XCK <= clock_generator:my_clock_gen.port2
@@ -255,15 +258,257 @@ AUD_ADCLRCK => AUD_ADCLRCK.IN1
 AUD_BCLK => AUD_BCLK.IN1
 AUD_ADCDAT => AUD_ADCDAT.IN1
 AUD_DACDAT <= audio_codec:codec.port14
+SW[7] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[5] => ~NO_FANOUT~
+SW[4] => ~NO_FANOUT~
+SW[3] => SW[3].IN1
+SW[2] => SW[2].IN1
+SW[1] => SW[1].IN1
+SW[0] => SW[0].IN1
+HEX0 => HEX0.IN1
+HEX1 => HEX1.IN1
+HEX2 => HEX2.IN1
+HEX3 => HEX3.IN1
 
 
-|DE1_SOC_golden_top|part1:ent11|clock_generator:my_clock_gen
+|DE1_SOC_golden_top|part2:ent12|sm_clk_divider:div_inst
+clkIn => clkIn.IN1
+rst_n => rst_n.IN1
+divide[0] => Mux0.IN4
+divide[1] => Mux0.IN3
+divide[2] => Mux0.IN2
+divide[3] => Mux0.IN1
+enable => enable.IN1
+clkOut <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SOC_golden_top|part2:ent12|sm_clk_divider:div_inst|sm_register_we:r_cntr
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+clk => q[4]~reg0.CLK
+clk => q[5]~reg0.CLK
+clk => q[6]~reg0.CLK
+clk => q[7]~reg0.CLK
+clk => q[8]~reg0.CLK
+clk => q[9]~reg0.CLK
+clk => q[10]~reg0.CLK
+clk => q[11]~reg0.CLK
+clk => q[12]~reg0.CLK
+clk => q[13]~reg0.CLK
+clk => q[14]~reg0.CLK
+clk => q[15]~reg0.CLK
+clk => q[16]~reg0.CLK
+clk => q[17]~reg0.CLK
+clk => q[18]~reg0.CLK
+clk => q[19]~reg0.CLK
+clk => q[20]~reg0.CLK
+clk => q[21]~reg0.CLK
+clk => q[22]~reg0.CLK
+clk => q[23]~reg0.CLK
+clk => q[24]~reg0.CLK
+clk => q[25]~reg0.CLK
+clk => q[26]~reg0.CLK
+clk => q[27]~reg0.CLK
+clk => q[28]~reg0.CLK
+clk => q[29]~reg0.CLK
+clk => q[30]~reg0.CLK
+clk => q[31]~reg0.CLK
+rst => q[0]~reg0.ACLR
+rst => q[1]~reg0.ACLR
+rst => q[2]~reg0.ACLR
+rst => q[3]~reg0.ACLR
+rst => q[4]~reg0.ACLR
+rst => q[5]~reg0.ACLR
+rst => q[6]~reg0.ACLR
+rst => q[7]~reg0.ACLR
+rst => q[8]~reg0.ACLR
+rst => q[9]~reg0.ACLR
+rst => q[10]~reg0.ACLR
+rst => q[11]~reg0.ACLR
+rst => q[12]~reg0.ACLR
+rst => q[13]~reg0.ACLR
+rst => q[14]~reg0.ACLR
+rst => q[15]~reg0.ACLR
+rst => q[16]~reg0.ACLR
+rst => q[17]~reg0.ACLR
+rst => q[18]~reg0.ACLR
+rst => q[19]~reg0.ACLR
+rst => q[20]~reg0.ACLR
+rst => q[21]~reg0.ACLR
+rst => q[22]~reg0.ACLR
+rst => q[23]~reg0.ACLR
+rst => q[24]~reg0.ACLR
+rst => q[25]~reg0.ACLR
+rst => q[26]~reg0.ACLR
+rst => q[27]~reg0.ACLR
+rst => q[28]~reg0.ACLR
+rst => q[29]~reg0.ACLR
+rst => q[30]~reg0.ACLR
+rst => q[31]~reg0.ACLR
+we => q[0]~reg0.ENA
+we => q[31]~reg0.ENA
+we => q[30]~reg0.ENA
+we => q[29]~reg0.ENA
+we => q[28]~reg0.ENA
+we => q[27]~reg0.ENA
+we => q[26]~reg0.ENA
+we => q[25]~reg0.ENA
+we => q[24]~reg0.ENA
+we => q[23]~reg0.ENA
+we => q[22]~reg0.ENA
+we => q[21]~reg0.ENA
+we => q[20]~reg0.ENA
+we => q[19]~reg0.ENA
+we => q[18]~reg0.ENA
+we => q[17]~reg0.ENA
+we => q[16]~reg0.ENA
+we => q[15]~reg0.ENA
+we => q[14]~reg0.ENA
+we => q[13]~reg0.ENA
+we => q[12]~reg0.ENA
+we => q[11]~reg0.ENA
+we => q[10]~reg0.ENA
+we => q[9]~reg0.ENA
+we => q[8]~reg0.ENA
+we => q[7]~reg0.ENA
+we => q[6]~reg0.ENA
+we => q[5]~reg0.ENA
+we => q[4]~reg0.ENA
+we => q[3]~reg0.ENA
+we => q[2]~reg0.ENA
+we => q[1]~reg0.ENA
+d[0] => q[0]~reg0.DATAIN
+d[1] => q[1]~reg0.DATAIN
+d[2] => q[2]~reg0.DATAIN
+d[3] => q[3]~reg0.DATAIN
+d[4] => q[4]~reg0.DATAIN
+d[5] => q[5]~reg0.DATAIN
+d[6] => q[6]~reg0.DATAIN
+d[7] => q[7]~reg0.DATAIN
+d[8] => q[8]~reg0.DATAIN
+d[9] => q[9]~reg0.DATAIN
+d[10] => q[10]~reg0.DATAIN
+d[11] => q[11]~reg0.DATAIN
+d[12] => q[12]~reg0.DATAIN
+d[13] => q[13]~reg0.DATAIN
+d[14] => q[14]~reg0.DATAIN
+d[15] => q[15]~reg0.DATAIN
+d[16] => q[16]~reg0.DATAIN
+d[17] => q[17]~reg0.DATAIN
+d[18] => q[18]~reg0.DATAIN
+d[19] => q[19]~reg0.DATAIN
+d[20] => q[20]~reg0.DATAIN
+d[21] => q[21]~reg0.DATAIN
+d[22] => q[22]~reg0.DATAIN
+d[23] => q[23]~reg0.DATAIN
+d[24] => q[24]~reg0.DATAIN
+d[25] => q[25]~reg0.DATAIN
+d[26] => q[26]~reg0.DATAIN
+d[27] => q[27]~reg0.DATAIN
+d[28] => q[28]~reg0.DATAIN
+d[29] => q[29]~reg0.DATAIN
+d[30] => q[30]~reg0.DATAIN
+d[31] => q[31]~reg0.DATAIN
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[8] <= q[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[9] <= q[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[10] <= q[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[11] <= q[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[12] <= q[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[13] <= q[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[14] <= q[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[15] <= q[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[16] <= q[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[17] <= q[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[18] <= q[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[19] <= q[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[20] <= q[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[21] <= q[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[22] <= q[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[23] <= q[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[24] <= q[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[25] <= q[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[26] <= q[26]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[27] <= q[27]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[28] <= q[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[29] <= q[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[30] <= q[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[31] <= q[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SOC_golden_top|part2:ent12|sm_hex_display:h0
+digit[0] => Decoder0.IN3
+digit[1] => Decoder0.IN2
+digit[2] => Decoder0.IN1
+digit[3] => Decoder0.IN0
+seven_segments[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seven_segments[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seven_segments[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seven_segments[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seven_segments[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seven_segments[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seven_segments[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SOC_golden_top|part2:ent12|sm_hex_display:h1
+digit[0] => Decoder0.IN3
+digit[1] => Decoder0.IN2
+digit[2] => Decoder0.IN1
+digit[3] => Decoder0.IN0
+seven_segments[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seven_segments[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seven_segments[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seven_segments[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seven_segments[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seven_segments[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seven_segments[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SOC_golden_top|part2:ent12|sm_hex_display:h2
+digit[0] => Decoder0.IN3
+digit[1] => Decoder0.IN2
+digit[2] => Decoder0.IN1
+digit[3] => Decoder0.IN0
+seven_segments[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seven_segments[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seven_segments[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seven_segments[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seven_segments[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seven_segments[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seven_segments[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SOC_golden_top|part2:ent12|sm_hex_display:h3
+digit[0] => Decoder0.IN3
+digit[1] => Decoder0.IN2
+digit[2] => Decoder0.IN1
+digit[3] => Decoder0.IN0
+seven_segments[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+seven_segments[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+seven_segments[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+seven_segments[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seven_segments[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seven_segments[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seven_segments[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SOC_golden_top|part2:ent12|clock_generator:my_clock_gen
 CLOCK2_50 => CLOCK2_50.IN1
 reset => reset.IN1
 AUD_XCK <= altpll:DE_Clock_Generator_Audio.clk
 
 
-|DE1_SOC_golden_top|part1:ent11|clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio
+|DE1_SOC_golden_top|part2:ent12|clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio
 inclk[0] => altpll_1uu1:auto_generated.inclk[0]
 inclk[1] => altpll_1uu1:auto_generated.inclk[1]
 fbin => ~NO_FANOUT~
@@ -324,7 +569,7 @@ fref <= <GND>
 icdrclk <= <GND>
 
 
-|DE1_SOC_golden_top|part1:ent11|clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio|altpll_1uu1:auto_generated
+|DE1_SOC_golden_top|part2:ent12|clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio|altpll_1uu1:auto_generated
 areset => generic_pll1.I_RST
 clk[0] <= generic_pll1.O_OUTCLK
 clk[1] <= <GND>
@@ -338,14 +583,14 @@ inclk[1] => ~NO_FANOUT~
 locked <= generic_pll1.LOCKED
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_and_video_config:cfg
+|DE1_SOC_golden_top|part2:ent12|audio_and_video_config:cfg
 clk => clk.IN3
 reset => reset.IN3
 I2C_SDAT <> Altera_UP_I2C:I2C_Controller.i2c_sdata
 I2C_SCLK <= Altera_UP_I2C:I2C_Controller.i2c_sclk
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_and_video_config:cfg|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz
+|DE1_SOC_golden_top|part2:ent12|audio_and_video_config:cfg|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz
 clk => middle_of_low_level~reg0.CLK
 clk => middle_of_high_level~reg0.CLK
 clk => falling_edge~reg0.CLK
@@ -393,7 +638,7 @@ middle_of_high_level <= middle_of_high_level~reg0.DB_MAX_OUTPUT_PORT_TYPE
 middle_of_low_level <= middle_of_low_level~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize
+|DE1_SOC_golden_top|part2:ent12|audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize
 clk => rom_address_counter[0].CLK
 clk => rom_address_counter[1].CLK
 clk => rom_address_counter[2].CLK
@@ -463,7 +708,7 @@ auto_init_complete <= auto_init_complete.DB_MAX_OUTPUT_PORT_TYPE
 auto_init_error <= auto_init_error~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller
+|DE1_SOC_golden_top|part2:ent12|audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller
 clk => current_byte[0].CLK
 clk => current_byte[1].CLK
 clk => current_byte[2].CLK
@@ -574,7 +819,7 @@ data_from_i2c[7] <= data_from_i2c[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 transfer_complete <= transfer_complete.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec
 clk => clk.IN5
 reset => reset.IN5
 read => comb.IN1
@@ -686,7 +931,7 @@ readdata_right[23] <= Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer.righ
 AUD_DACDAT <= Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer.serial_audio_out_data
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Clock_Edge:Bit_Clock_Edges
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Clock_Edge:Bit_Clock_Edges
 clk => last_test_clk.CLK
 clk => cur_test_clk.CLK
 reset => ~NO_FANOUT~
@@ -695,7 +940,7 @@ rising_edge <= rising_edge.DB_MAX_OUTPUT_PORT_TYPE
 falling_edge <= falling_edge.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Clock_Edge:ADC_Left_Right_Clock_Edges
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Clock_Edge:ADC_Left_Right_Clock_Edges
 clk => last_test_clk.CLK
 clk => cur_test_clk.CLK
 reset => ~NO_FANOUT~
@@ -704,7 +949,7 @@ rising_edge <= rising_edge.DB_MAX_OUTPUT_PORT_TYPE
 falling_edge <= falling_edge.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Clock_Edge:DAC_Left_Right_Clock_Edges
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Clock_Edge:DAC_Left_Right_Clock_Edges
 clk => last_test_clk.CLK
 clk => cur_test_clk.CLK
 reset => ~NO_FANOUT~
@@ -713,7 +958,7 @@ rising_edge <= rising_edge.DB_MAX_OUTPUT_PORT_TYPE
 falling_edge <= falling_edge.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer
 clk => clk.IN3
 reset => reset.IN3
 bit_clk_rising_edge => bit_clk_rising_edge.IN1
@@ -791,7 +1036,7 @@ right_channel_data[23] <= Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO.read_d
 right_channel_data[24] <= Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO.read_data
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter
 clk => counting~reg0.CLK
 clk => bit_counter[0].CLK
 clk => bit_counter[1].CLK
@@ -812,7 +1057,7 @@ left_right_clk_falling_edge => reset_bit_counter.IN1
 counting <= counting~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO
 clk => clk.IN1
 reset => reset.IN1
 write_en => write_en.IN1
@@ -876,7 +1121,7 @@ read_data[23] <= scfifo:Sync_FIFO.q
 read_data[24] <= scfifo:Sync_FIFO.q
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO
 data[0] => scfifo_8ba1:auto_generated.data[0]
 data[1] => scfifo_8ba1:auto_generated.data[1]
 data[2] => scfifo_8ba1:auto_generated.data[2]
@@ -945,7 +1190,7 @@ usedw[5] <= scfifo_8ba1:auto_generated.usedw[5]
 usedw[6] <= scfifo_8ba1:auto_generated.usedw[6]
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated
 clock => a_dpfifo_r2a1:dpfifo.clock
 data[0] => a_dpfifo_r2a1:dpfifo.data[0]
 data[1] => a_dpfifo_r2a1:dpfifo.data[1]
@@ -1009,7 +1254,7 @@ usedw[6] <= a_dpfifo_r2a1:dpfifo.usedw[6]
 wrreq => a_dpfifo_r2a1:dpfifo.wreq
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo
 clock => altsyncram_p3i1:FIFOram.clock0
 clock => cntr_h2b:rd_ptr_msb.clock
 clock => cntr_u27:usedw_counter.clock
@@ -1146,7 +1391,7 @@ wreq => _.IN0
 wreq => wait_state.IN1
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|altsyncram_p3i1:FIFOram
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|altsyncram_p3i1:FIFOram
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -1629,7 +1874,7 @@ wren_a => ram_block1a23.PORTAWE
 wren_a => ram_block1a23.ENA0
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cmpr_6l8:almost_full_comparer
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cmpr_6l8:almost_full_comparer
 aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => data_wire[0].IN0
 dataa[1] => data_wire[0].IN0
@@ -1647,7 +1892,7 @@ datab[5] => data_wire[2].IN1
 datab[6] => data_wire[3].IN1
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cmpr_6l8:three_comparison
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cmpr_6l8:three_comparison
 aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => data_wire[0].IN0
 dataa[1] => data_wire[0].IN0
@@ -1665,7 +1910,7 @@ datab[5] => data_wire[2].IN1
 datab[6] => data_wire[3].IN1
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cntr_h2b:rd_ptr_msb
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cntr_h2b:rd_ptr_msb
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
 clock => counter_reg_bit[3].CLK
@@ -1688,7 +1933,7 @@ sclr => counter_reg_bit[1].SCLR
 sclr => counter_reg_bit[0].SCLR
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cntr_u27:usedw_counter
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cntr_u27:usedw_counter
 clock => counter_reg_bit[6].CLK
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
@@ -1716,7 +1961,7 @@ updown => updown_other_bits.IN1
 updown => counter_comb_bita0.DATAF
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cntr_i2b:wr_ptr
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cntr_i2b:wr_ptr
 clock => counter_reg_bit[6].CLK
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
@@ -1742,7 +1987,7 @@ sclr => counter_reg_bit[1].SCLR
 sclr => counter_reg_bit[0].SCLR
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO
 clk => clk.IN1
 reset => reset.IN1
 write_en => write_en.IN1
@@ -1806,7 +2051,7 @@ read_data[23] <= scfifo:Sync_FIFO.q
 read_data[24] <= scfifo:Sync_FIFO.q
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO
 data[0] => scfifo_8ba1:auto_generated.data[0]
 data[1] => scfifo_8ba1:auto_generated.data[1]
 data[2] => scfifo_8ba1:auto_generated.data[2]
@@ -1875,7 +2120,7 @@ usedw[5] <= scfifo_8ba1:auto_generated.usedw[5]
 usedw[6] <= scfifo_8ba1:auto_generated.usedw[6]
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated
 clock => a_dpfifo_r2a1:dpfifo.clock
 data[0] => a_dpfifo_r2a1:dpfifo.data[0]
 data[1] => a_dpfifo_r2a1:dpfifo.data[1]
@@ -1939,7 +2184,7 @@ usedw[6] <= a_dpfifo_r2a1:dpfifo.usedw[6]
 wrreq => a_dpfifo_r2a1:dpfifo.wreq
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo
 clock => altsyncram_p3i1:FIFOram.clock0
 clock => cntr_h2b:rd_ptr_msb.clock
 clock => cntr_u27:usedw_counter.clock
@@ -2076,7 +2321,7 @@ wreq => _.IN0
 wreq => wait_state.IN1
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|altsyncram_p3i1:FIFOram
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|altsyncram_p3i1:FIFOram
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -2559,7 +2804,7 @@ wren_a => ram_block1a23.PORTAWE
 wren_a => ram_block1a23.ENA0
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cmpr_6l8:almost_full_comparer
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cmpr_6l8:almost_full_comparer
 aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => data_wire[0].IN0
 dataa[1] => data_wire[0].IN0
@@ -2577,7 +2822,7 @@ datab[5] => data_wire[2].IN1
 datab[6] => data_wire[3].IN1
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cmpr_6l8:three_comparison
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cmpr_6l8:three_comparison
 aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => data_wire[0].IN0
 dataa[1] => data_wire[0].IN0
@@ -2595,7 +2840,7 @@ datab[5] => data_wire[2].IN1
 datab[6] => data_wire[3].IN1
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cntr_h2b:rd_ptr_msb
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cntr_h2b:rd_ptr_msb
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
 clock => counter_reg_bit[3].CLK
@@ -2618,7 +2863,7 @@ sclr => counter_reg_bit[1].SCLR
 sclr => counter_reg_bit[0].SCLR
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cntr_u27:usedw_counter
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cntr_u27:usedw_counter
 clock => counter_reg_bit[6].CLK
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
@@ -2646,7 +2891,7 @@ updown => updown_other_bits.IN1
 updown => counter_comb_bita0.DATAF
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cntr_i2b:wr_ptr
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cntr_i2b:wr_ptr
 clock => counter_reg_bit[6].CLK
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
@@ -2672,7 +2917,7 @@ sclr => counter_reg_bit[1].SCLR
 sclr => counter_reg_bit[0].SCLR
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer
 clk => clk.IN2
 reset => reset.IN2
 bit_clk_rising_edge => ~NO_FANOUT~
@@ -2773,7 +3018,7 @@ right_channel_fifo_write_space[7] <= right_channel_fifo_write_space[7]~reg0.DB_M
 serial_audio_out_data <= serial_audio_out_data~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO
 clk => clk.IN1
 reset => reset.IN1
 write_en => write_en.IN1
@@ -2837,7 +3082,7 @@ read_data[23] <= scfifo:Sync_FIFO.q
 read_data[24] <= scfifo:Sync_FIFO.q
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO
 data[0] => scfifo_8ba1:auto_generated.data[0]
 data[1] => scfifo_8ba1:auto_generated.data[1]
 data[2] => scfifo_8ba1:auto_generated.data[2]
@@ -2906,7 +3151,7 @@ usedw[5] <= scfifo_8ba1:auto_generated.usedw[5]
 usedw[6] <= scfifo_8ba1:auto_generated.usedw[6]
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated
 clock => a_dpfifo_r2a1:dpfifo.clock
 data[0] => a_dpfifo_r2a1:dpfifo.data[0]
 data[1] => a_dpfifo_r2a1:dpfifo.data[1]
@@ -2970,7 +3215,7 @@ usedw[6] <= a_dpfifo_r2a1:dpfifo.usedw[6]
 wrreq => a_dpfifo_r2a1:dpfifo.wreq
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo
 clock => altsyncram_p3i1:FIFOram.clock0
 clock => cntr_h2b:rd_ptr_msb.clock
 clock => cntr_u27:usedw_counter.clock
@@ -3107,7 +3352,7 @@ wreq => _.IN0
 wreq => wait_state.IN1
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|altsyncram_p3i1:FIFOram
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|altsyncram_p3i1:FIFOram
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -3590,7 +3835,7 @@ wren_a => ram_block1a23.PORTAWE
 wren_a => ram_block1a23.ENA0
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cmpr_6l8:almost_full_comparer
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cmpr_6l8:almost_full_comparer
 aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => data_wire[0].IN0
 dataa[1] => data_wire[0].IN0
@@ -3608,7 +3853,7 @@ datab[5] => data_wire[2].IN1
 datab[6] => data_wire[3].IN1
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cmpr_6l8:three_comparison
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cmpr_6l8:three_comparison
 aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => data_wire[0].IN0
 dataa[1] => data_wire[0].IN0
@@ -3626,7 +3871,7 @@ datab[5] => data_wire[2].IN1
 datab[6] => data_wire[3].IN1
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cntr_h2b:rd_ptr_msb
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cntr_h2b:rd_ptr_msb
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
 clock => counter_reg_bit[3].CLK
@@ -3649,7 +3894,7 @@ sclr => counter_reg_bit[1].SCLR
 sclr => counter_reg_bit[0].SCLR
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cntr_u27:usedw_counter
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cntr_u27:usedw_counter
 clock => counter_reg_bit[6].CLK
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
@@ -3677,7 +3922,7 @@ updown => updown_other_bits.IN1
 updown => counter_comb_bita0.DATAF
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cntr_i2b:wr_ptr
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cntr_i2b:wr_ptr
 clock => counter_reg_bit[6].CLK
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
@@ -3703,7 +3948,7 @@ sclr => counter_reg_bit[1].SCLR
 sclr => counter_reg_bit[0].SCLR
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO
 clk => clk.IN1
 reset => reset.IN1
 write_en => write_en.IN1
@@ -3767,7 +4012,7 @@ read_data[23] <= scfifo:Sync_FIFO.q
 read_data[24] <= scfifo:Sync_FIFO.q
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO
 data[0] => scfifo_8ba1:auto_generated.data[0]
 data[1] => scfifo_8ba1:auto_generated.data[1]
 data[2] => scfifo_8ba1:auto_generated.data[2]
@@ -3836,7 +4081,7 @@ usedw[5] <= scfifo_8ba1:auto_generated.usedw[5]
 usedw[6] <= scfifo_8ba1:auto_generated.usedw[6]
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated
 clock => a_dpfifo_r2a1:dpfifo.clock
 data[0] => a_dpfifo_r2a1:dpfifo.data[0]
 data[1] => a_dpfifo_r2a1:dpfifo.data[1]
@@ -3900,7 +4145,7 @@ usedw[6] <= a_dpfifo_r2a1:dpfifo.usedw[6]
 wrreq => a_dpfifo_r2a1:dpfifo.wreq
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo
 clock => altsyncram_p3i1:FIFOram.clock0
 clock => cntr_h2b:rd_ptr_msb.clock
 clock => cntr_u27:usedw_counter.clock
@@ -4037,7 +4282,7 @@ wreq => _.IN0
 wreq => wait_state.IN1
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|altsyncram_p3i1:FIFOram
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|altsyncram_p3i1:FIFOram
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -4520,7 +4765,7 @@ wren_a => ram_block1a23.PORTAWE
 wren_a => ram_block1a23.ENA0
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cmpr_6l8:almost_full_comparer
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cmpr_6l8:almost_full_comparer
 aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => data_wire[0].IN0
 dataa[1] => data_wire[0].IN0
@@ -4538,7 +4783,7 @@ datab[5] => data_wire[2].IN1
 datab[6] => data_wire[3].IN1
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cmpr_6l8:three_comparison
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cmpr_6l8:three_comparison
 aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => data_wire[0].IN0
 dataa[1] => data_wire[0].IN0
@@ -4556,7 +4801,7 @@ datab[5] => data_wire[2].IN1
 datab[6] => data_wire[3].IN1
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cntr_h2b:rd_ptr_msb
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cntr_h2b:rd_ptr_msb
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
 clock => counter_reg_bit[3].CLK
@@ -4579,7 +4824,7 @@ sclr => counter_reg_bit[1].SCLR
 sclr => counter_reg_bit[0].SCLR
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cntr_u27:usedw_counter
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cntr_u27:usedw_counter
 clock => counter_reg_bit[6].CLK
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK
@@ -4607,7 +4852,7 @@ updown => updown_other_bits.IN1
 updown => counter_comb_bita0.DATAF
 
 
-|DE1_SOC_golden_top|part1:ent11|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cntr_i2b:wr_ptr
+|DE1_SOC_golden_top|part2:ent12|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_8ba1:auto_generated|a_dpfifo_r2a1:dpfifo|cntr_i2b:wr_ptr
 clock => counter_reg_bit[6].CLK
 clock => counter_reg_bit[5].CLK
 clock => counter_reg_bit[4].CLK

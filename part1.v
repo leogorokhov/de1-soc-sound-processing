@@ -13,9 +13,9 @@ module part1 (CLOCK_50, CLOCK2_50, KEY, FPGA_I2C_SCLK, FPGA_I2C_SDAT, AUD_XCK,
 	output AUD_DACDAT;
 	
 	// Local wires.
-	wire read_ready, write_ready, read, write;
-	wire [23:0] readdata_left, readdata_right;
-	wire [23:0] writedata_left, writedata_right;
+	reg read_ready, write_ready, read, write;
+	reg [23:0] readdata_left, readdata_right;
+	reg [23:0] writedata_left, writedata_right;
 	wire reset = ~KEY[0];
 
 	/////////////////////////////////
@@ -28,7 +28,7 @@ noise_gen ng (
 	.reset (reset),
     .noise (noise)
 );
-	always @(posedge CLOCK_50 or negedge reset) begin
+	always @(posedge CLOCK_50 or posedge reset) begin
 		if (reset) begin
         writedata_left  <= 16'd0;
         writedata_right <= 16'd0;
@@ -73,6 +73,19 @@ assign read = read_ready; */
 	assign read = ... not shown
 	assign write = ... not shown
 	*/
+	
+	wire read_ready_w, write_ready_w, read_w, write_w;
+	wire [23:0] readdata_left_w, readdata_right_w;
+	wire [23:0] writedata_left_w, writedata_right_w;
+	
+	assign read_ready_w = read_ready;
+	assign write_ready_w = write_ready;
+	assign read_w = read;
+	assign write_w = write;
+	assign readdata_left_w = readdata_left;
+	assign readdata_right_w = readdata_right;
+	assign writedata_left_w = writedata_left;
+	assign writedata_right_w = writedata_right;
 	
 /////////////////////////////////////////////////////////////////////////////////
 // Audio CODEC interface. 
@@ -123,8 +136,8 @@ assign read = read_ready; */
 		AUD_DACLRCK,
 
 		// Outputs
-		read_ready, write_ready,
-		readdata_left, readdata_right,
+		read_ready_w, write_ready_w,
+		readdata_left_w, readdata_right_w,
 		AUD_DACDAT
 	);
 	

@@ -12,10 +12,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "AUD_ADCLRCK",
-					"strict" : false
-				},
-				{
 					"name" : "AUD_BCLK",
 					"strict" : false
 				},
@@ -32,7 +28,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "KEY[0]",
+					"name" : "KEY[3]",
 					"strict" : false
 				}
 			]
