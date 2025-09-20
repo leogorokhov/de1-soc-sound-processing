@@ -260,7 +260,7 @@ module DE1_SOC_golden_top(
 
 part1 ent11(.CLOCK_50(CLOCK_50),
 				.CLOCK2_50(CLOCK2_50), 
-				.KEY(KEY[0]), 
+				.KEY(KEY), 
 				.FPGA_I2C_SCLK(FPGA_I2C_SCLK),
 				.FPGA_I2C_SDAT(FPGA_I2C_SDAT), 
 				.AUD_XCK(AUD_XCK), 
