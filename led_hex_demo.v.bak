@@ -1,0 +1,58 @@
+// -------------------------------------------------------------
+// led_hex_demo.v
+// Демонстрация индикации: бегущая точка по LEDR и счётчик 0..F на HEX0
+// - скорость задаётся divide[3:0] (чем больше — тем медленнее)
+// - enable=1 включает анимацию, enable=0 — выключает (выходы гаснут)
+// Требует наличия sm_clk_divider.v и sm_hex_display.v в проекте
+// -------------------------------------------------------------
+module led_hex_demo (
+    input        clkIn,     // обычно CLOCK2_50 (50 МГц)
+    input        rst_n,     // активный НИЗКИЙ (подай KEY[0])
+    input  [3:0] divide,    // скорость (0 быстро ... 15 медленно)
+    input        enable,    // 1 = включить индикацию
+    output [9:0] LEDR,      // бегущая точка
+    output [6:0] HEX0       // счётчик 0..F (активный ноль)
+);
+
+    // -------- делитель такта --------
+    wire slow_clk;
+    sm_clk_divider #(
+        .shift (16),  // базовый сдвиг: можно сделать больше/меньше по вкусу
+        .bypass(0)
+    ) u_div (
+        .clkIn  (clkIn),
+        .rst_n  (rst_n),
+        .divide (divide),
+        .enable (1'b1),
+        .clkOut (slow_clk)
+    );
+
+    // -------- бегущая точка по LEDR --------
+    reg [9:0] led_run;
+    always @(posedge slow_clk or negedge rst_n) begin
+        if (!rst_n)
+            led_run <= 10'b0000000001;
+        else
+            led_run <= {led_run[8:0], led_run[9]}; // циклический сдвиг влево
+    end
+
+    // -------- счётчик 0..F для HEX0 --------
+    reg [3:0] hex_cnt;
+    always @(posedge slow_clk or negedge rst_n) begin
+        if (!rst_n)
+            hex_cnt <= 4'h0;
+        else
+            hex_cnt <= hex_cnt + 4'h1;
+    end
+
+    wire [6:0] hex0_segments;
+    sm_hex_display u_hex0 (
+        .hex      (hex_cnt),
+        .segments (hex0_segments) // активный ноль
+    );
+
+    // -------- выходы с учётом enable --------
+    assign LEDR = enable ? led_run       : 10'b0;
+    assign HEX0 = enable ? hex0_segments : 7'h7F; // 7'h7F = всё погашено для активного нуля
+
+endmodule
